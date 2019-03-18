@@ -4,9 +4,13 @@ let pi = 4;
 
 let history = [];
 
+let minY = 2;
+let maxY = 4;
+
 function setup() {
   createCanvas(600, 400);
   div = createDiv('').style('font-size', '64pt');
+  console.log(PI);
   frameRate(20);
 }
 
@@ -19,7 +23,7 @@ if(iteration % 2 == 0) {
   pi += (4 / den);
 }
   history.push(pi);
-  let piY = map(PI,2,4,height,0);
+  let piY = map(PI,minY,maxY,height,0);
   line(0, piY, width, piY);
   let spacing = width/history.length
   stroke(255);
@@ -27,7 +31,7 @@ if(iteration % 2 == 0) {
   beginShape();
   for(let i = 0; i< history.length; i++){
     let x = i * spacing;
-    let y = map(history[i],2,4,height,0);
+    let y = map(history[i],minY,maxY,height,0);
     vertex(x,y);
   }
   endShape();
