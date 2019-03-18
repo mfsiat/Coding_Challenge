@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "sketch.js",
-  "homepage": "https://mfsiat.github.io/PiApproximation_LeibnizSeries/sketch.js",
+  "homepage": "https://mfsiat.github.io/Coding_Challenge/PiApproximation_LeibnizSeries/sketch.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "gh-pages -d sketch.js"
+    "deploy": "gh-pages -d /"
   },
   "author": "",
   "license": "MIT",
